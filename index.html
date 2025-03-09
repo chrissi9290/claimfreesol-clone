@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Free SOL Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Solana Wallet Adapter CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@solana/wallet-adapter-react-ui/styles.css" />
+    <!-- Solana Web3 & Wallet Adapter -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <script src="https://unpkg.com/@solana/wallet-adapter-base@latest/lib/index.iife.min.js"></script>
+    <script src="https://unpkg.com/@solana/wallet-adapter-wallets@latest/lib/index.iife.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Claim Free SOL Clone</h1>
+        <button id="connect-wallet">Wallet verbinden</button>
+        <div id="wallet-info" style="display:none;">
+            <p>Wallet verbunden: <span id="wallet-address"></span></p>
+            <button id="scan-wallet">Nach SOL suchen</button>
+            <p id="sol-balance"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
