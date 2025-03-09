@@ -1,11 +1,11 @@
 // Solana Web3.js und Wallet Adapter importieren
 const { Connection, clusterApiUrl, PublicKey } = solanaWeb3;
-const { PhantomWalletAdapter } = walletAdapterWallets;
+const { PhantomWalletAdapter } = solanaWalletAdapterWallets; // Hier war der Fehler!
 
 // Solana Verbindung
 const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
 
-// Phantom Wallet Adapter
+// Phantom Wallet Adapter initialisieren
 const wallet = new PhantomWalletAdapter();
 
 // Button und Anzeigeelemente
